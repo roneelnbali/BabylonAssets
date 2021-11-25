@@ -1,0 +1,47 @@
+Exporter version: 2.93.4, Blender version: 3.0.0 Beta
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  true
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  yes
+			WARNING: unsupported node type(ShaderNodeTexSky) will trigger baking
+	Python World class constructor completed
+	processing begun of mesh:  Plane
+		processing begun of material:  Material.011
+			WARNING: unsupported node type(ShaderNodeTexMusgrave) will trigger baking
+			WARNING: unsupported node type(ShaderNodeTexNoise) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeTexVoronoi) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeValToRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeTexMusgrave) will trigger baking
+			WARNING: unsupported node type(ShaderNodeTexNoise) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeTexVoronoi) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeBump) will trigger baking
+		processing begun of material:  Material.013
+			WARNING: unsupported node type(ShaderNodeTexNoise) will trigger baking
+			WARNING: unsupported node type(ShaderNodeBump) will trigger baking
+		processing begun of material:  Material.014
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Clearcoat channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+========= An error was encountered =========
+  File "G:\Users\ronddemonnz\AppData\Roaming\Blender Foundation\Blender\3.0\scripts\addons\babylon_js\json_exporter.py", line 116, in execute
+    mesh = Mesh(object, scene, self)
+  File "G:\Users\ronddemonnz\AppData\Roaming\Blender Foundation\Blender\3.0\scripts\addons\babylon_js\mesh.py", line 150, in __init__
+    recipe = BakingRecipe(bpyMesh, exporter)
+  File "G:\Users\ronddemonnz\AppData\Roaming\Blender Foundation\Blender\3.0\scripts\addons\babylon_js\materials\baking_recipe.py", line 105, in __init__
+    self.bakedMaterial.bake(bpyMesh, self)
+  File "G:\Users\ronddemonnz\AppData\Roaming\Blender Foundation\Blender\3.0\scripts\addons\babylon_js\materials\material.py", line 145, in bake
+    tileXHold = render.tile_x
+ERROR:  'RenderSettings' object has no attribute 'tile_x'
+========= end of processing =========
+elapsed time:  0 min, 0.525 secs
